@@ -35,16 +35,16 @@ Users should be able to:
 
 ### Links
 
-- Github Repo URL: [QR Code Repo](https://github.com/amyspencerproject/qr-code)
-- Live Site URL: [QR Code Page](https://amyspencerproject.github.io/qr-code/)
+- Github Repo URL: [Newsletter Sign Up Repo](https://github.com/amyspencerproject/newsletter-sign-up)
+- Live Site URL: [Newsletter Sign Up](https://amyspencerproject.github.io/newsletter-sign-up/)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS Variables
-- CSS Grid
+- CSS
+- JS
 - Mobile-first workflow
 
 ### What I learned
