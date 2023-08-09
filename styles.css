@@ -75,10 +75,138 @@ select {
 }
 
 /* ========================= Custom Styles ========================= */
-
+/* ======= CSS Variables ======= */
+:root {
+  --white: hsl(0, 0%, 100%);
+  --error-text: hsl(4, 100%, 67%);
+  --error-fill: hsla(4, 100%, 67%, 15%);
+  --grey: hsl(231, 7%, 60%);
+  --charcoal-grey: hsl(235, 18%, 26%);
+  --slate-grey: hsl(234, 29%, 20%);
+  --gradient-button-1: hsl(5, 100%, 61%);
+  --gradient-button-2: hsl(346, 100%, 66%);
+  --gradient-hover-1: hsl(36, 100%, 63%);
+  --gradient-hover-2: hsla(357, 100%, 68%, 0);
+}
 /* ======= Base Styles ======= */
 body {
   font-family: "Roboto", sans-serif;
+  color: var(--slate-grey);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+
+.sign-up-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  background-color: var(--white);
+  /* border: 1px solid red; */
+}
+
+.sign-up-image {
+  border-radius: 0 0 16px 16px;
+}
+
+.sign-up-form {
+  margin-inline: 1rem;
+}
+
+.sign-up-form-legend {
+  margin: 1.5rem 0;
+}
+
+.sign-up-list {
+  padding-left: 1.75rem;
+  margin-top: 1rem;
+}
+
+.sign-up-list li {
+  list-style-image: url(./assets/images/icon-list.svg);
+  margin: 1.25rem 0;
+}
+
+.form-flex-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.email-label {
+  font-size: 0.75rem;
+}
+
+.email-input-field {
+  outline: 1px solid var(--grey);
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.email-button {
+  background-color: var(--slate-grey);
+  border-radius: 8px;
+  border: none;
+  color: var(--white);
+  width: 100%;
+  padding: 1rem 0.5rem;
+  margin: 1rem 0;
+}
+
+.error-message {
+  color: var(--error-text);
+  font-size: 0.75rem;
+}
+
+.success-message-wrap {
+  margin-inline: 1rem;
+  padding: 5rem 0;
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 23.475rem;
+}
+
+.dismiss {
+  background-color: var(--slate-grey);
+  border-radius: 8px;
+  border: none;
+  color: var(--white);
+  padding: 1rem;
+  margin: 10rem 0 1rem 0;
+  width: 100%;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.hide {
+  display: none;
+}
+
+/* ========== Footer ========== */
+
+footer {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: end;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+footer p {
+  color: var(--grey);
+  font-size: 0.825rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--error-text);
 }
 
 /* ========================= Media Queries ========================= */
@@ -88,4 +216,7 @@ body {
 
 /* desktop change at 960px */
 @media screen and (min-width: 60rem) {
+  body {
+    background-color: var(--charcoal-grey);
+  }
 }

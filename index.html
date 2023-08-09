@@ -39,50 +39,42 @@
           />
         </picture>
         <!-- Sign-up form start -->
-        <form action="">
-          <legend>
+        <form class="sign-up-form hide">
+          <legend class="sign-up-form-legend">
             <h1>Stay updated!</h1>
             <p>Join 60,000+ product managers receiving monthly updates on:</p>
-            <ul>
-              <li>
-                <img
-                  src="./assets/images/icon-list.svg"
-                  alt=""
-                  class="list-icon"
-                />
-                Product discovery and building what matters
-              </li>
-              <li>
-                <img
-                  src="./assets/images/icon-list.svg"
-                  alt=""
-                  class="list-icon"
-                />Measuring to ensure updates are a success
-              </li>
-              <li>
-                <img
-                  src="./assets/images/icon-list.svg"
-                  alt=""
-                  class="list-icon"
-                />And much more!
-              </li>
+            <ul class="sign-up-list">
+              <li>Product discovery and building what matters</li>
+              <li>Measuring to ensure updates are a success</li>
+              <li>And much more!</li>
             </ul>
           </legend>
-          <label for="email">Email address</label>
-          <p class="error-message">Valid email required</p>
-          <input type="email" placeholder="email@company.com" />
-          <input type="button" value="Subscribe to monthly newsletter" />
+          <div class="form-flex-row">
+            <label class="bold email-label" for="email">Email address</label>
+            <p class="error-message">Valid email required</p>
+          </div>
+          <input
+            class="email-input-field"
+            type="email"
+            placeholder="email@company.com"
+          />
+          <button class="email-button" type="submit">
+            Subscribe to monthly newsletter
+          </button>
         </form>
         <!-- Sign-up form end -->
 
         <!-- Success message start -->
         <div class="success-message-wrap">
+          <img src="./assets/images/icon-success.svg" alt="" />
+          <h1>Thanks for subscribing!</h1>
           <p class="sucess-message">
-            Thanks for subscribing! A confirmation email has been sent to
-            ash@loremcompany.com. Please open it and click the button inside to
-            confirm your subscription.
+            A confirmation email has been sent to
+            <span id="email-input" class="bold">ash@loremcompany.com</span> .
+            Please open it and click the button inside to confirm your
+            subscription.
           </p>
-          <a>Dismiss message</a>
+          <button class="dismiss">Dismiss message</button>
         </div>
         <!-- Success message end -->
       </div>
@@ -94,7 +86,14 @@
           >Frontend Mentor</a
         >.
       </p>
-      <p>Coded by <a href="#">Your Name Here</a>.</p>
+      <p>
+        Coded by
+        <a
+          href="https://www.frontendmentor.io/profile/amyspencerproject"
+          target="_blank"
+          >Amy Spencer</a
+        >.
+      </p>
     </footer>
   </body>
 </html>
