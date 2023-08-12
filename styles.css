@@ -94,6 +94,11 @@ body {
   color: var(--slate-grey);
 }
 
+main {
+  display: grid;
+  place-content: center;
+}
+
 h1 {
   font-size: 2.5rem;
   margin: 1rem 0;
@@ -105,6 +110,7 @@ h1 {
   justify-content: center;
   background-color: var(--white);
   /* border: 1px solid red; */
+  max-width: 24rem;
 }
 
 .sign-up-image {
@@ -112,7 +118,7 @@ h1 {
 }
 
 .sign-up-form {
-  margin-inline: 1rem;
+  margin-inline: 1.5rem;
 }
 
 .sign-up-form-legend {
@@ -132,6 +138,7 @@ h1 {
 .form-flex-row {
   display: flex;
   justify-content: space-between;
+  margin-top: 3rem;
 }
 
 .email-label {
@@ -143,9 +150,9 @@ h1 {
   border: none;
   border-radius: 8px;
   width: 100%;
-  padding: 0.5rem;
+  padding: 1rem 0.5rem;
   margin-top: 0.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .email-button {
@@ -168,6 +175,7 @@ h1 {
   padding: 5rem 0;
   display: flex;
   flex-flow: row wrap;
+  gap: 1rem;
   max-width: 23.475rem;
 }
 
@@ -177,7 +185,7 @@ h1 {
   border: none;
   color: var(--white);
   padding: 1rem;
-  margin: 10rem 0 1rem 0;
+  margin-top: 15rem;
   width: 100%;
 }
 
@@ -210,13 +218,37 @@ footer a {
 }
 
 /* ========================= Media Queries ========================= */
-/* tablet change at 640px */
-@media screen and (min-width: 40rem) {
-}
 
 /* desktop change at 960px */
 @media screen and (min-width: 60rem) {
   body {
     background-color: var(--charcoal-grey);
+  }
+
+  .sign-up-container {
+    border-radius: 36px;
+    flex-flow: row-reverse wrap;
+    max-width: 58rem;
+    margin: 13.75rem auto;
+  }
+  .sign-up-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  picture {
+    margin: 1rem;
+  }
+
+  .success-message-wrap {
+    margin-inline: 4rem;
+  }
+
+  .dismiss {
+    margin-top: 2.5rem;
+  }
+  .hide {
+    display: none;
   }
 }
