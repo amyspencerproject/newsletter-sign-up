@@ -28,7 +28,7 @@
   <body>
     <main>
       <div class="sign-up-container">
-        <picture class="sign-up-image hide">
+        <picture class="sign-up-image">
           <source
             srcset="./assets/images/illustration-sign-up-desktop.svg"
             media="(min-width: 60rem)"
@@ -39,7 +39,7 @@
           />
         </picture>
         <!-- Sign-up form start -->
-        <form class="sign-up-form hide">
+        <form class="sign-up-form" id="email-form-submit" novalidate>
           <legend class="sign-up-form-legend">
             <h1>Stay updated!</h1>
             <p>Join 60,000+ product managers receiving monthly updates on:</p>
@@ -50,12 +50,18 @@
             </ul>
           </legend>
           <div class="form-flex-row">
-            <label class="bold email-label" for="email">Email address</label>
-            <p class="error-message">Valid email required</p>
+            <label class="bold email-label" for="email-address"
+              >Email address</label
+            >
+            <p class="error-message hide" role="alert" aria-live="polite">
+              Valid email required
+            </p>
           </div>
           <input
             class="email-input-field"
+            id="email-input"
             type="email"
+            name="email-address"
             placeholder="email@company.com"
           />
           <button class="email-button" type="submit">
@@ -65,16 +71,18 @@
         <!-- Sign-up form end -->
 
         <!-- Success message start -->
-        <div class="success-message-wrap">
+        <div class="success-message-wrap hide">
           <img src="./assets/images/icon-success.svg" alt="" />
           <h1>Thanks for subscribing!</h1>
           <p class="sucess-message">
             A confirmation email has been sent to
-            <span id="email-input" class="bold">ash@loremcompany.com</span> .
+            <span id="email-address" class="bold">ash@loremcompany.com</span> .
             Please open it and click the button inside to confirm your
             subscription.
           </p>
-          <button class="dismiss">Dismiss message</button>
+          <button class="dismiss" id="dismiss" type="submit">
+            Dismiss message
+          </button>
         </div>
         <!-- Success message end -->
       </div>
@@ -95,5 +103,6 @@
         >.
       </p>
     </footer>
+    <script src="./index.js"></script>
   </body>
 </html>

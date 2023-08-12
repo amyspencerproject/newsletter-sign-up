@@ -170,6 +170,12 @@ h1 {
   font-size: 0.75rem;
 }
 
+.error-input {
+  background-color: var(--error-fill);
+  color: var(--error-text);
+  outline: 1px solid var(--error-text);
+}
+
 .success-message-wrap {
   margin-inline: 1rem;
   padding: 5rem 0;
