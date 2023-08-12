@@ -44,8 +44,8 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS
-- JS
 - Mobile-first workflow
+- JS
 
 ### What I learned
 
