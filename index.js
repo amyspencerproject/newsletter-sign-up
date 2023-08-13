@@ -13,12 +13,7 @@ emailSubmit.addEventListener("submit", function (e) {
   e.preventDefault();
 
   //validate email string
-  let goodEmail = stringValidator(emailString);
-
-  //clear out input field if email good
-  if ((goodEmail = true)) {
-    emailInput.value = "";
-  }
+  stringValidator(emailString);
 });
 
 // validation method for email string
@@ -45,4 +40,6 @@ dismissButton.addEventListener("click", function (e) {
   signUpImage.classList.remove("hide");
   signUpForm.classList.remove("hide");
   successMessage.classList.add("hide");
+  emailInput.value = "";
+  emailInput.classList.remove("error-input");
 });

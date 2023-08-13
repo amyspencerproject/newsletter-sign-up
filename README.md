@@ -10,9 +10,6 @@ This is a solution to the [Newsletter sign-up form with success message challeng
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued Development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -31,7 +28,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+Mobile View
+
+![](./screenshots/mobile-signup.png) ![](./screenshots/mobile-success.png) ![](./screenshots/mobile-error.png)
+
+Desktop View
+
+![](./screenshots/desktop-hover.png) ![](./screenshots/desktop-success.png)
 
 ### Links
 
@@ -46,16 +49,6 @@ Users should be able to:
 - CSS
 - Mobile-first workflow
 - JS
-
-### What I learned
-
--
-
-### Continued development
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
 
 ## Author
 
